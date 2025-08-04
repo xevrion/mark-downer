@@ -12,7 +12,8 @@ const config = {
   kit: {
     alias: {
       $content: path.resolve('src/content'),
-    }
+    },
+	
   }
 };
 
