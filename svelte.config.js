@@ -1,20 +1,19 @@
 import { mdsvex } from 'mdsvex';
 import adapter from '@sveltejs/adapter-auto';
+import path from 'path';
 
-const mdsvexOptions = {
-	extensions: ['.md'],
-	remarkPlugins: [[remarkToc, { tight: true }]],
-	rehypePlugins: [rehypeSlug]
-};
-
-/** @type {import('@sveltejs/kit').Config} */
 const config = {
-	kit: { // adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
-	// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
-	// See https://svelte.dev/docs/kit/adapters for more information about adapters.
-	adapter: adapter() },
-	preprocess: [mdsvex()],
-	extensions: ['.svelte', '.svx']
+  extensions: ['.svelte', '.md'],
+
+  preprocess: [mdsvex({
+    extensions: ['.md']
+  })],
+
+  kit: {
+    alias: {
+      $content: path.resolve('src/content'),
+    }
+  }
 };
 
 export default config;

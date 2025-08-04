@@ -1,2 +1,8 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+  import Lecture from '$content/posts/lecture.md';
+</script>
+
+
+<main class="prose dark:prose-invert max-w-3xl mx-auto p-6 sm:p-8  rounded-xl">
+  <Lecture />
+</main>
