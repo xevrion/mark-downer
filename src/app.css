@@ -2,18 +2,6 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
-@theme {
-  --animation-fade-in: fadeIn 0.8s linear forwards;
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-}
 
 .poppins-thin {
   font-family: "Poppins", sans-serif;
