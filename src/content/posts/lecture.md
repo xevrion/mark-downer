@@ -6,5 +6,5 @@ This is a test markdown page.
 - Item 2
 - Item 3
 
-![image](shinchu.jpeg)
-![image](trainscene.gif)
+![image](shinchu.jpeg, 'shinchu')
+![image](trainscene.gif, 'trainu')

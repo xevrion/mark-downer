@@ -1,7 +1,6 @@
 import { mdsvex } from 'mdsvex';
 import adapter from '@sveltejs/adapter-auto';
-import path from 'path';
-import { fileURLToPath } from 'url';
+
 
 const config = {
   extensions: ['.svelte', '.md'],
@@ -13,8 +12,10 @@ const config = {
   kit: {
     adapter: adapter(),
     alias: {
-      $Content: path.resolve('/src/Content'),
-    }
+			$components: './src/components/',
+			$content: './src/content/',
+			'@/*': './path/to/lib/*'
+		}
   }
 };
 
