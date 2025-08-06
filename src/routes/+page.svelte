@@ -2,7 +2,7 @@
 	const { data } = $props();
 </script>
 
-<div class="text-center opacity-0 animate-[var(--animation-fade-in)]">
+<div class="text-center ">
 	<h1 class="text-4xl font-bold mb-8 poppins-extrabold">📚 Markdown Reader</h1>
 	<p class="text-xl mb-8 poppins-bold">Select a page from the sidebar to get started</p>
 	
