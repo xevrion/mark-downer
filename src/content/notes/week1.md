@@ -1,4 +1,4 @@
 Hello
 
 
-![image](/trainscene.gif, 'shinchu')
+![image](/shinchu.jpeg)
